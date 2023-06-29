@@ -40,7 +40,7 @@ public class TicketService {
     }
 
     private boolean validatePhoneNumber(String phoneNumber) {
-        VerifyPhoneResponseDto verifyPhoneResponseDto = rapidAPIFeignCaller.verifyPhoneNumber("veriphone.p.rapidapi.com", "cefc66b7cfmshac2feb5d17e495fp114468jsn5b6d9bb0d51e", phoneNumber);
+        VerifyPhoneResponseDto verifyPhoneResponseDto = rapidAPIFeignCaller.verifyPhoneNumber("veriphone.p.rapidapi.com", "BURAYA API KEY GIRIN", phoneNumber);
 
         return verifyPhoneResponseDto.isPhone_valid();
     }
